@@ -1,0 +1,16 @@
+server:
+  port: 8761
+
+eureka:
+# 心跳时间，服务注册到eureka保存多长时间，断开后会被踢出去
+#  server:
+#    enable-self-preservation: false
+#    eviction-interval-timer-in-ms: 4000
+  instance:
+    hostname: localhost
+  client:
+    #因为eureka本身也是一个微服务，这两个意思是把这个eureka注册到其他eureka中，做集群用
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      defalut-Zone: http://${eureka.instance.hostname}:${server.port}/eureka

@@ -1,0 +1,11 @@
+server:
+  port: 200
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    serviceUrl:
+      defalut-Zone: http://${eureka.instance.hostname}:8761/eureka
+spring:
+  application:
+    name: microservice-200-order

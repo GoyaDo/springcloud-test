@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="springcloud-test-order-service-101" />
+        <module name="springcloud-eureka-server" />
+        <module name="springcloud-test" />
+        <module name="springcloud-test-user-service-200" />
+        <module name="springcloud-test-order-service-100" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="springcloud-eureka-server" options="-parameters" />
+      <module name="springcloud-test-order-service-100" options="-parameters" />
+      <module name="springcloud-test-order-service-101" options="-parameters" />
+      <module name="springcloud-test-user-service-200" options="-parameters" />
+    </option>
+  </component>
+</project>
